@@ -9,6 +9,9 @@ key_value_list = [None] * LIST_MAX_SIZE
 
 from hashfuction import HashFunction
 
+#lets test the hash fuction
+
+
 class HashTable:
 
     #Insert fuction
