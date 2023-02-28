@@ -28,3 +28,16 @@ def HashFunction(data_list, a_string):
     return list_index
 
 ```
+
+### Lets Test The fuction
+
+```
+LIST_MAX_SIZE = 4096 # Can be of any length
+
+key_value_list = [None] * LIST_MAX_SIZE
+
+print(HashFunction(key_value_list, 'test'))
+
+# The result is 448
+
+```
