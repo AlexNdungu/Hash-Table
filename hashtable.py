@@ -7,6 +7,8 @@ key_value_list = [None] * LIST_MAX_SIZE
 
 # Lets create a hash class
 
+from hashfuction import HashFunction
+
 class HashTable:
 
     #Insert fuction
