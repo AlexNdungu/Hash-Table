@@ -3,4 +3,11 @@ from hashtable import HashTable
 
 hashtable1 = HashTable(max_size = 1024)
 
-print(len(hashtable1.key_value_list))
+#print(len(hashtable1.key_value_list))
+
+# Now insert some values
+hashtable1.insert('alex', 'alex@gmail.com')
+hashtable1.insert('meta', 'meta@gmail.com')
+
+# Now we find an item
+hashtable1.find('meta')

@@ -42,7 +42,7 @@ class HashTable:
             return None
         else:
             key, value = kv
-            return value
+            return print(value)
 
     #Update fuction
     def update(self, key, value):
