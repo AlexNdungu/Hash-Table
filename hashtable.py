@@ -32,15 +32,31 @@ class HashTable:
 
     #Find fuction
     def find(self, key):
-        pass
+        
+        # first find the index
+        find_index = HashFunction(self.key_value_list, key)
+
+        kv = self.key_value_list[find_index]
+
+        if kv is None:
+            return None
+        else:
+            key, value = kv
+            return value
 
     #Update fuction
     def update(self, key, value):
-        pass
+        
+        # first find the index
+        update_index = HashFunction(self.key_value_list, key)
+
+        self.key_value_list[update_index] = key, value
+
 
     #List all items
     def listAll(self):
-        pass
+        
+        return [key_value[0] for key_value in self.key_value_list if key_value is not None]
 
 
 # Lets test the     
