@@ -58,5 +58,3 @@ class HashTable:
         
         return [key_value[0] for key_value in self.key_value_list if key_value is not None]
 
-
-# Lets test the     
