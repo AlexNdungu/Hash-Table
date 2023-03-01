@@ -15,3 +15,6 @@ hashtable1.find('meta')
 # Now lets update
 hashtable1.update('meta','metanew@gmail.com')
 hashtable1.find('meta')
+
+# List all the items added
+hashtable1.listAll()

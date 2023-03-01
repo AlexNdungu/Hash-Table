@@ -1,7 +1,7 @@
 # Create a list that will store all the key value pairs
 # Give it a constant length 
 
-LIST_MAX_SIZE = 4096 # Can vary
+LIST_MAX_SIZE = None # Can vary
 
 #key_value_list = [None] * LIST_MAX_SIZE
 
@@ -56,5 +56,5 @@ class HashTable:
     #List all items
     def listAll(self):
         
-        return [key_value[0] for key_value in self.key_value_list if key_value is not None]
+        return print([key_value[0] for key_value in self.key_value_list if key_value is not None])
 
