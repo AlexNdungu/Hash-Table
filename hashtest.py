@@ -7,14 +7,14 @@ hashtable1 = HashTable(max_size = 1024)
 
 # Now insert some values
 hashtable1.insert('alex', 'alex@gmail.com')
-hashtable1.insert('meta', 'meta@gmail.com')
+hashtable1.insert('xela', 'xela@gmail.com')
 
 # Now we find an item
-hashtable1.find('meta')
+hashtable1.find('xela')
 
 # Now lets update
-hashtable1.update('meta','metanew@gmail.com')
-hashtable1.find('meta')
+hashtable1.update('xela','xelanew@gmail.com')
+hashtable1.find('alex')
 
 # List all the items added
 hashtable1.listAll()

@@ -7,7 +7,7 @@ LIST_MAX_SIZE = None # Can vary
 
 # Lets create a hash class
 
-from hashfuction import HashFunction
+from hashcollisions import avoid_collision
 
 #lets test the hash fuction
 
@@ -22,7 +22,7 @@ class HashTable:
     def insert(self, key, value):
         
         #Lets get the index generated from the key
-        new_index = HashFunction(self.key_value_list, key)
+        new_index = avoid_collision(self.key_value_list, key)
 
         #Now we insert the value to the index
 
@@ -34,7 +34,7 @@ class HashTable:
     def find(self, key):
         
         # first find the index
-        find_index = HashFunction(self.key_value_list, key)
+        find_index = avoid_collision(self.key_value_list, key)
 
         kv = self.key_value_list[find_index]
 
@@ -48,7 +48,7 @@ class HashTable:
     def update(self, key, value):
         
         # first find the index
-        update_index = HashFunction(self.key_value_list, key)
+        update_index = avoid_collision(self.key_value_list, key)
 
         self.key_value_list[update_index] = key, value
 
