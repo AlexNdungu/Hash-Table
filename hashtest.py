@@ -11,3 +11,7 @@ hashtable1.insert('meta', 'meta@gmail.com')
 
 # Now we find an item
 hashtable1.find('meta')
+
+# Now lets update
+hashtable1.update('meta','metanew@gmail.com')
+hashtable1.find('meta')
